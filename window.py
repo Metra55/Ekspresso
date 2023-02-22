@@ -4,8 +4,8 @@ from PyQt5.QtWidgets import (
 )
 
 from window_ui import Ui_MainWindow
-from windows.image_size_dialog import DobFilm
-from izm_film.image_size_dialog import IzmFilm
+from windows.dob_cof import DobCof
+from izm_film.izmn_cof import IzmCoffe
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -38,7 +38,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def dobavit_film_func(self):
 
-        dialog = DobFilm(self)
+        dialog = DobCof(self)
 
         try:
             self.naz, self.stepen_obj, self.molot, self.opis, self.price, self.obiom = dialog.get_image_size()
@@ -57,7 +57,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             liste.append(self.tableWidget.item(self.tableWidget.currentRow(), i).text())
 
 
-        dialog = IzmFilm(self, liste[0], liste[1], liste[2], liste[3], liste[4], liste[5])
+        dialog = IzmCoffe(self, liste[0], liste[1], liste[2], liste[3], liste[4], liste[5])
 
         try:
             self.naz, self.stepen_obj, self.molot, self.opis, self.price, self.obiom = dialog.get_image_size()

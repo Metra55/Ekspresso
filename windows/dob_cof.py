@@ -5,10 +5,10 @@ from PyQt5.QtWidgets import (
     QWidget,
 )
 
-from .image_size_dialog_ui import Ui_dob_film_dialog
+from .dobcof_ui import Ui_dob_cof_dialog
 
 
-class DobFilm(Ui_dob_film_dialog, QDialog):
+class DobCof(Ui_dob_cof_dialog, QDialog):
     def __init__(self, parent: QWidget) -> None:
         super().__init__(parent)
         self.setupUi(self)

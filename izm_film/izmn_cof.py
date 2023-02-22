@@ -5,10 +5,10 @@ from PyQt5.QtWidgets import (
     QWidget,
 )
 
-from .image_size_dialog_ui import Ui_Izmn_film
+from .red_cofei import Redact
 
 
-class IzmFilm(Ui_Izmn_film, QDialog):
+class IzmCoffe(Redact, QDialog):
     def __init__(self, parent: QWidget,naz, stepen, molot, vkus,price,obiom) -> None:
 
         super().__init__(parent)
