@@ -4,8 +4,8 @@ from PyQt5.QtWidgets import (
 )
 
 from window_ui import Ui_MainWindow
-from windows.dob_cof import DobCof
-from izm_film.izmn_cof import IzmCoffe
+from func.windows.dob_cof import DobCof
+from func.izm_film.izmn_cof import IzmCoffe
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
